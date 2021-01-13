@@ -1,0 +1,131 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local infinitygui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local admin = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local feanimationgui = Instance.new("TextButton")
+local infiniteyield = Instance.new("TextButton")
+local open = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+infinitygui.Name = "infinitygui"
+infinitygui.Parent = game.CoreGui
+infinitygui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = infinitygui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.387323946, 0, 0.249385744, 0)
+main.Size = UDim2.new(0, 313, 0, 454)
+main.Visible = false
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = main
+
+admin.Name = "admin"
+admin.Parent = main
+admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+admin.Position = UDim2.new(0.0575079881, 0, 0.191629961, 0)
+admin.Size = UDim2.new(0, 120, 0, 45)
+admin.Font = Enum.Font.SourceSans
+admin.Text = "Admin"
+admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+admin.TextScaled = true
+admin.TextSize = 14.000
+admin.TextWrapped = true
+admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Harvkingpoop/cool/main/source?token=ASORINCBNVQBSECEYEDKTY2774QZI'))()
+end)
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0319488831, 0, 0.0462555066, 0)
+TextLabel.Size = UDim2.new(0, 290, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "INFINITY GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.Position = UDim2.new(0.0575079918, 0, 0.850220323, 0)
+close.Size = UDim2.new(0, 80, 0, 44)
+close.Font = Enum.Font.SourceSans
+close.Text = "Close"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+	open.Visible = true
+	main.Visible = false
+end)
+feanimationgui.Name = "feanimationgui"
+feanimationgui.Parent = main
+feanimationgui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+feanimationgui.Position = UDim2.new(0.0575079881, 0, 0.334801763, 0)
+feanimationgui.Size = UDim2.new(0, 128, 0, 50)
+feanimationgui.Font = Enum.Font.SourceSans
+feanimationgui.Text = "FE Animation"
+feanimationgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+feanimationgui.TextScaled = true
+feanimationgui.TextSize = 14.000
+feanimationgui.TextWrapped = true
+feanimationgui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Harvkingpoop/fe-gui/main/source?token=ASORINFSMBTGUMSHCSPUV6S774QJK'))()
+end)
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = main
+infiniteyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.Position = UDim2.new(0.501597464, 0, 0.334801763, 0)
+infiniteyield.Size = UDim2.new(0, 136, 0, 50)
+infiniteyield.Font = Enum.Font.SourceSans
+infiniteyield.Text = "IY"
+infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.TextScaled = true
+infiniteyield.TextSize = 14.000
+infiniteyield.TextWrapped = true
+infiniteyield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+open.Name = "open"
+open.Parent = infinitygui
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 127)
+open.Position = UDim2.new(0, 0, 0.777641296, 0)
+open.Size = UDim2.new(0, 119, 0, 48)
+open.Font = Enum.Font.SourceSans
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+	main.Visible = true
+	open.Visible = false
+end)
+UICorner_2.CornerRadius = UDim.new(0.25, 0)
+UICorner_2.Parent = open
+
+-- Scripts:
+
+local function VBQN_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+	
+end
+coroutine.wrap(VBQN_fake_script)()
